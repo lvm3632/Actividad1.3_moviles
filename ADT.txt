@@ -1,0 +1,22 @@
+View -> Tools Windows -> Device File Explorer
+https://stackoverflow.com/questions/27086808/android-check-null-or-empty-string-in-android
+if (TextUtils.isEmpty(myString))
+
+
+MainActivity
+	textView(sharedprefs): txtViewSaludo1
+	textView(sharedprefs): txtViewSaludo2
+	String(sharedprefs): KEY_SALUDO1
+	String(sharedprefs): KEY_SALUDO2
+	button: btnGoToGreetings
+	button: btnGoToFriends
+GreetingsActivity
+	editText: editTextEmpty1
+	editText: editTextEmpty2
+	button: btnUpdateGreetings
+FriendsActivity (SQLite)
+	editText: editTextName
+	editText: editTextHobby
+	button: btnSaveNameAndHobby
+	button: btnFindByName -> fill -> editTextHobby
+	button: btnDeleteByName -> detect -> editTextName and delete
